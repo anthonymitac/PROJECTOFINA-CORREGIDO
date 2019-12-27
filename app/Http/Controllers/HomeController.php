@@ -32,11 +32,18 @@ class HomeController extends Controller
         return view('home',compact('ordergame'));
     }
 
-    function startGame(REQUEST $request){
+    function startGame(){
         //ENVIAR LOS DATOS DE LAS PREGUNTAS Y RESPUESTAS A LA  VISTA QUESTIONS
-        $nextquestion=Questions::all()->where('id','=',1);
-        $nextanswer=Answer::all()->where('id','=',1);
-        return view('question1',compact('nextquestion','nextanswer'));
+
+        $numquestiorand=range(1, 15);
+        shuffle($numquestiorand);
+        foreach($numquestiorand as $nqr){
+            //dd($nqr);
+        }
+
+        $nextquestion=Questions::all()->where('id','=',$nqr);
+        $nextanswer=Answer::all()->where('id','=',$nqr);
+        return view('question1',compact('nextquestion','nextanswer','nqr'));
     }
 
 }

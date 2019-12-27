@@ -21,7 +21,7 @@
                                     {{ session('status') }}
                                 </div>
                             @endif
-                            <h1>QUESTION 13:</h1>
+                            <h1>QUESTION :</h1>
                             <!-- ESTE FOREACH MUESTRA LA PRIMERA PREGUNTA -->
                             <label>
                                 @foreach ($nextquestion as $ques )
@@ -33,24 +33,24 @@
 
                             <!-- ESTE FORM ENVIA LAS RESPUESTAS AL CONTROLLADOR GAMECONTROLLER -->
 
-                            <form action=".../../../../../home/verification/{{ Auth::user()->id }}/{{ 14 }}" method="POST">
+                            <form action=".../../../../../home/verification/{{ Auth::user()->id }}/{{ $nqr }}" method="POST">
                                 {{ csrf_field() }}
                                 {{ method_field('PATCH') }}
                                 {{ method_field('POST') }}
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <input type="hidden" name="_method" value="POST">
                                 <p class="questions1">
-                                    <label class="answer">ALTERNATIVES:
+                                    <label class=" answer text-white">ALTERNATIVES:
                                         <br>
                                         <br>
-                                        <input type="radio" name="question" value="867"> Patrón de Diseño de Componentes Altamente Cohesivos.
+                                        <input class="text-white" type="radio" name="question" value="867"> Patrón de Diseño de Componentes Altamente Cohesivos.
                                         <br>
                                         <br>
                                         <input type="radio" name="question" value="123"> Patrón de Separación de Preocupaciones/Responsabilidades.
                                         <br>
                                         <br>
                                         <!-- HACEMOS UN RECORRIDO PARA MOSTRAR LA RESPUESTA DE LA SEGUNDA PREGUNTA DE LA TABLA QUUESTION   -->
-                                        <input type="radio" name="question" value="13">
+                                        <input type="radio" name="question" value={{ $nqr }}>
                                                 @foreach ($nextanswer as $ans)
                                                     {{ $ans->answername }}
                                                 @endforeach

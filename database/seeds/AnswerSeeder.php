@@ -34,19 +34,19 @@ class AnswerSeeder extends Seeder
             'answername'=>'Principio de Segregación de Interfaces.'
         ]);
         Answer::create([
-            'answername'=>'Una estructura es una "miniarquitectura" 
-            reutilizable, que sirve como base desde la que se pueden 
+            'answername'=>'Una estructura es una "miniarquitectura"
+            reutilizable, que sirve como base desde la que se pueden
             aplicar a otros patrones de diseño.'
         ]);
         Answer::create([
-            'answername'=>'Un patrón de diseño describe un problema 
-            que ocurre una y otra vez en un ambiente de desarrollo de 
-            software, y luego describe el núcleo de su solución en forma 
-            tal que es posible usarla un millón de veces sin elaborarla 
+            'answername'=>'Un patrón de diseño describe un problema
+            que ocurre una y otra vez en un ambiente de desarrollo de
+            software, y luego describe el núcleo de su solución en forma
+            tal que es posible usarla un millón de veces sin elaborarla
             dos veces de la misma forma.'
         ]);
         Answer::create([
-            'answername'=>'Los patrones creacionales se centran en la 
+            'answername'=>'Los patrones creacionales se centran en la
             "creación, composición y representación" de objetos.'
         ]);
         Answer::create([
@@ -83,9 +83,81 @@ class AnswerSeeder extends Seeder
             'answername'=>'Vista Física '
         ]);
         Answer::create([
-            'answername'=>'Es una plantilla donde se definen los 
-            elementos, referencias a hojas de estilo y javascript 
+            'answername'=>'Es una plantilla donde se definen los
+            elementos, referencias a hojas de estilo y javascript
             que regularmente existen siempre en todo el sitio.'
         ]);
+        Answer::create([
+            'answername'=>'Definir un sistema'
+        ]);
+        Answer::create([
+            'answername'=>'Falso'
+
+
+        ]);
+        Answer::create([
+            'answername'=>'Flujo de acciones secuenciales'
+
+
+        ]);
+        Answer::create([
+            'answername'=>'vista lógica'
+
+
+        ]);
+        Answer::create([
+            'answername'=>'vista de despliegue '
+
+
+        ]);
+        Answer::create([
+            'answername'=>'vista de procesos'
+
+
+        ]);
+        Answer::create([
+            'answername'=>'Vista de Escenarios'
+
+
+        ]);
+        Answer::create([
+            'answername'=>'Vista de Escenarios'
+
+
+        ]);
+        Answer::create([
+            'answername'=>'Controlador'
+
+
+        ]);
+        Answer::create([
+            'answername'=>'Controlador'
+
+
+        ]);
+        Answer::create([
+            'answername'=>'En la vista'
+
+
+
+
+
+        ]);
+        Answer::create([
+            'answername'=>'Modelo'
+
+
+
+
+
+        ]);
+        Answer::create([
+            'answername'=>'Para permitir una mejor organización lógica de la estructura del proyecto.'
+            ]);
+            Answer::create([
+                'answername'=>'model'
+                ]);
+                
+
     }
 }
