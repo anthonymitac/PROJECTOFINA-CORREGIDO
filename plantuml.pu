@@ -1,0 +1,54 @@
+@startuml
+
+class models.Users{
+name:string
+email:string
+password:string
+}
+
+class models.Questions{
+question:string
+level_id:string
+}
+
+class models.Game{
+id_Users:string
+score:integer
+}
+class models.Answer{
+name:string
+email:string
+password:string
+}
+
+
+
+models.Users "*" *-- "1" models.Game
+models.Questions "1" *-- "1" models.Answer
+
+class controllers.GameController{
+list()
+store()
+delete()
+}
+
+class controllers.QuestionsController{
+list()
+store()
+delete()
+}
+
+class controllers.AnswerController{
+list()
+store()
+delete()
+}
+
+
+class controllers.UsersController{
+list()
+store()
+delete()
+}
+
+@enduml
