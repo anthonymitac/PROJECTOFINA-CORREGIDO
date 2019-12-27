@@ -16,7 +16,8 @@ class GameController extends Controller{
     function verificationAnswer(Request $request,$userid,$numquestion){
         //VERIFICAMOS SI LA RESPUESTA ES CORRECTA, HACIENDO UNA CONSULTA
         //EN LA BASE DE DATOS.
-        $answerrpta=Answer::find($request->question);
+        $answerrpta= $this->validateAnswer($request->question); //codigo donde llamas
+        //$answerrpta=Answer::find($request->question);
         //VERIFICAMOS QUE EN LA BASE DE DATOS DE GAME
         //SI EXISTE EL USUARIO O NO
         $recordGame=Game::all()->where('user_id','=',$userid)->first();
@@ -84,7 +85,9 @@ class GameController extends Controller{
         //SACAMOS LA SIGUIENTE PREGUNTA PARA ENVIARLO
         return $this->controllerQuestionsAnswerViews($userid,$numquestion);
     }
-
+    function validateAnswer($Answeruser){
+        return Answer::find($Answeruser);
+    }
     public function controllerQuestionsAnswerViews($userid,$numOfquestion){
         //SACAMOS LA SIGUIENTE PREGUNTA PARA ENVIARLO
         $nextquestion=Questions::all()->where('id','=',$numOfquestion);

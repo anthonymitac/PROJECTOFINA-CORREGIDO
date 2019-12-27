@@ -54,7 +54,7 @@
                                                 @endforeach
                                         <br>
                                         <br>
-                                        <input type="radio" name="question" value="929" checked> Ninguno de los anteriores.
+                                        <input type="radio" name="question" value="929"> Ninguno de los anteriores.
                                         <br>
                                         <br>
                                     </label>

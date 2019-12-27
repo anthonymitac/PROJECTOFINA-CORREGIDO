@@ -21,10 +21,11 @@
                                     {{ session('status') }}
                                 </div>
                             @endif
-                            
+
                             <!-- ESTE FOREACH MUESTRA LA PRIMERA PREGUNTA -->
                             <label class="userscore">
-                                    <h1>{{ Auth::user()->name }} HAS OBETNIDO:
+                                    <h1>{{ Auth::user()->name }}
+                                        YOU HAVE OBTAINED:
                                     @foreach ($registerGame as $regGame)
                                         {{ $regGame->score }}
                                     @endforeach
@@ -42,7 +43,7 @@
                                 <button class="buttonStarted">
                                     BACK TO HOME
                                     <br>
-                                    (CLICK AQUI)
+                                    (CLICK HERE)
                                 </button>
                             </form>
                         </div>

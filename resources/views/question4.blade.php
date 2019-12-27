@@ -43,7 +43,7 @@
                                     <label class="answer">ALTERNATIVES:
                                         <br>
                                         <br>
-                                        <input type="radio" name="question" value="867" checked checked> Principio Abierto Cerrado.
+                                        <input type="radio" name="question" value="867"> Principio Abierto Cerrado.
                                         <br>
                                         <br>
                                         <!-- MOSTRAR LA RESPUESTA DE LA CUARTA PREGUNTA DE LA TABLA QUUESTION   -->

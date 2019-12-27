@@ -50,7 +50,7 @@
                                         <br>
                                         <br>
                                         <!-- HACEMOS UN RECORRIDO PARA MOSTRAR LA RESPUESTA DE LA SEGUNDA PREGUNTA DE LA TABLA QUUESTION   -->
-                                        <input type="radio" name="question" value="1" checked>
+                                        <input type="radio" name="question" value="1">
                                                 @foreach ($nextanswer as $ans)
                                                     {{ $ans->answername }}
                                                 @endforeach

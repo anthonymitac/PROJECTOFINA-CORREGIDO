@@ -56,7 +56,7 @@
                                         <input type="radio" name="question" value="867"> Patrón de Diseño de Componentes Altamente Cohesivos.
                                         <br>
                                         <br>
-                                        <input type="radio" name="question" value="929" checked> Patrón de No Repetición.
+                                        <input type="radio" name="question" value="929"> Patrón de No Repetición.
                                         <br>
                                         <br>
                                     </label>

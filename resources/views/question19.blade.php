@@ -53,7 +53,7 @@
                                                 @endforeach
                                         <br>
                                         <br>
-                                        <input type="radio" name="question" value="123" checked> Patrón de Separación de Preocupaciones/Responsabilidades.
+                                        <input type="radio" name="question" value="123"> Patrón de Separación de Preocupaciones/Responsabilidades.
                                         <br>
                                         <br>
                                         <input type="radio" name="question" value="929"> Patrón de no repetición(DRY).

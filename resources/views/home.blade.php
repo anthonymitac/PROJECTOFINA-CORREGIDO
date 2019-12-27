@@ -16,7 +16,7 @@
                         <div class="card-header">
                             {{ 'WELCOME USER :' }} {{ Auth::user()->name }}
                             <br>
-                            {{ 'TU ID DE GAMER ES EL SIGUIENTE: ' }} {{ Auth::user()->id }}
+                            {{ 'YOUR GAMER ID IS : ' }} {{ Auth::user()->id }}
                         </div>
                         <div class="card-body-home">
                             @if (session('status'))
@@ -24,7 +24,7 @@
                                     {{ session('status') }}
                                 </div>
                             @endif
-                            
+
                             <form action="home/startedGame"  method="POST">
                                 {{ csrf_field() }}
                                 {{ method_field('PATCH') }}
@@ -32,11 +32,11 @@
 
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <input type="hidden" name="_method" value="POST">
-                                
+
                                 <button name="answer" value="1" class="buttonStarted">
                                     STARTED QUESTIONS GAME
                                     <br>
-                                    (CLICK AQUI)
+                                    (CLICK HERE)
                                 </button>
 
 
@@ -47,13 +47,14 @@
                                       <th scope="row" >GAMER ID</th>
                                       <th > SCORE</th>
                                     </tr>
-                                    
+                                    @foreach ($ordergame as $og )
                                     <tr>
-                                        @foreach ($ordergame as $og )
+
                                         <td>{{ $og->id }}</td>
-                                        <td>{{ $og->score }} Puntos</td>
-                                        @endforeach
+                                        <td>{{ $og->score }} Points</td>
+
                                     </tr>
+                                    @endforeach
                                 </table>
                             </form>
                         </div>

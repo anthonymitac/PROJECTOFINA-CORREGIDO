@@ -56,7 +56,7 @@
                                         <input type="radio" name="question" value="123"> Patrón de Separación de Preocupaciones/Responsabilidades.
                                         <br>
                                         <br>
-                                        <input type="radio" name="question" value="929" checked> Patrón de no repetición(DRY).
+                                        <input type="radio" name="question" value="929"> Patrón de no repetición(DRY).
                                         <br>
                                         <br>
                                     </label>

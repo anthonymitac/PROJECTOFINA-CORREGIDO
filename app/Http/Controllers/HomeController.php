@@ -27,8 +27,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $game=Game::all();
-        $ordergame=$game->sortBy('score');
+        $ordergame=Game::orderBy('score','desc')->get();
         //dd($game);
         return view('home',compact('ordergame'));
     }
